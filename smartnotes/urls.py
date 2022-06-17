@@ -20,7 +20,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),  # \/
-    # path('home', views.home)  -----------> we have to remove the dependency in main django file for ease of deletion and insertion
+    # path('home', views.home)  -----------> remove the dependency in main django file for ease of deletion and insertion
     path('', include('home.urls')),
     path('smart/', include('notes.urls')),
 ]
