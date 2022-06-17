@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
-    <h1 class="fs-1" style="font-family:'Sofia'">Welcome to smartnotes</h1>
-    <p>Today is 
-    </p>
-        <p class="fw-bolder">{{today}}</p>
-    <a href="{% url 'notes.list' %}" class="btn btn-primary">Check out your smart notes</a>
-{% endblock %}
+        <h1 class="fs-1" style="font-family:'Sofia'">Welcome to smartnotes</h1>
+        <img src="{% static 'Images/noteimg.png' %}" alt="Note Image" class="rounded mx-auto d-block img-fluid" style="height: 300px;">
+        <p class="my-4">Today is 
+        </p>
+            <p class="fw-bolder">{{today}}</p>
+        <a href="{% url 'notes.list' %}" class="btn btn-primary my-3">Check out your smart notes</a>
+    {% endblock %}
+</body>
