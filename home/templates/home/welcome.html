@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Welcome to smartnotes</h1>
+    <h1 class="fs-1" style="font-family:'Sofia'">Welcome to smartnotes</h1>
     <p>Today is 
-        {{today}}
     </p>
-    <a href="{% url 'notes.list' %}" class="btn btn-primary">Check out these smart notes</a>
+        <p class="fw-bolder">{{today}}</p>
+    <a href="{% url 'notes.list' %}" class="btn btn-primary">Check out your smart notes</a>
 {% endblock %}
