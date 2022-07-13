@@ -8,5 +8,6 @@ A personalized and simple web application for note making.
 
 ### To run the web-app
 ```
+pip install -r requirements.txt
 python manage.py runserver
 ```
